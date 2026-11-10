@@ -1,0 +1,13 @@
+Dataset,Test,LM_stat,LM_pval,F_stat,F_pval,Reject_5pct
+boston,Breusch-Pagan,42.9894,1e-06,5.7681,0.0,Yes
+boston,White,233.0753,0.0,8.9475,0.0,Yes
+boston,Goldfeld-Quandt (by rm),,,1.192,0.085387,No
+ames,Breusch-Pagan,294.0535,0.0,54.346,0.0,Yes
+ames,White,1831.6342,0.0,179.2361,0.0,Yes
+ames,Goldfeld-Quandt (by GrLivArea),,,1.2237,5.9e-05,Yes
+wdi,Breusch-Pagan,31.4027,3e-06,7.9062,2e-06,Yes
+wdi,White,71.9263,0.0,5.2169,0.0,Yes
+wdi,Goldfeld-Quandt (by lag_gdp_pc),,,1.3589,0.0,Yes
+enterprise,Breusch-Pagan,655.7382,0.0,251.3713,0.0,Yes
+enterprise,White,663.2097,0.0,84.7892,0.0,Yes
+enterprise,Goldfeld-Quandt (by log_capital),,,1.8002,0.0,Yes

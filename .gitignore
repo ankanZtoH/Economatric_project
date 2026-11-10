@@ -1,38 +1,64 @@
-# Python
+# =====================================================================
+# Git Ignore Configuration — GLS/WLS Econometrics Project
+# =====================================================================
+
+# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python Cache & Bytecode
 __pycache__/
 *.py[cod]
 *$py.class
-.venv/
 *.egg-info/
 dist/
 build/
+*.egg
 
-# R
+# Jupyter & Streamlit Cache
+.ipynb_checkpoints/
+.streamlit/secrets.toml
+
+# R Temporary & Workspace Artifacts
 .Rhistory
 .Rdata
 .RData
 .Ruserdata
 *.Rproj.user/
 
-# Data (raw files may be large)
-data/raw/*.csv
-data/raw/*.xlsx
-!data/raw/.gitkeep
-
-# OS
-.DS_Store
-Thumbs.db
-
-# IDE
+# IDE & Text Editor Files
 .idea/
 .vscode/
 *.swp
 *.swo
+*~
+.directory
 
-# Output (regenerable)
-output/figures/*.png
-output/figures/*.pdf
-output/tables/*.csv
-!output/figures/.gitkeep
-!output/tables/.gitkeep
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
 
+# ---------------------------------------------------------------------
+# Datasets: EXPLICITLY TRACKED & PUSHED TO GITHUB
+# ---------------------------------------------------------------------
+!data/
+!data/raw/
+!data/raw/*
+!data/processed/
+!data/processed/*
+
+# ---------------------------------------------------------------------
+# Outputs & Figures: Tracked so charts and tables display on GitHub
+# ---------------------------------------------------------------------
+!output/
+!output/figures/
+!output/figures/*
+!output/tables/
+!output/tables/*

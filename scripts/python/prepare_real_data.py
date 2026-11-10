@@ -69,7 +69,9 @@ def prepare_ames():
     print("  2. Ames Housing (De Cock, 2011)")
     print("=" * 60)
 
-    xls_path = os.path.join(RAW_DIR, "ames_attempt.csv")  # actually .xls
+    xls_path = os.path.join(RAW_DIR, "ames_housing.xls")
+    if not os.path.exists(xls_path):
+        xls_path = os.path.join(RAW_DIR, "ames_attempt.csv")
     if os.path.exists(xls_path) and os.path.getsize(xls_path) > 1000:
         try:
             df = pd.read_excel(xls_path, engine='xlrd')
