@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+*.egg-info/
+dist/
+build/
+
+# R
+.Rhistory
+.Rdata
+.RData
+.Ruserdata
+*.Rproj.user/
+
+# Data (raw files may be large)
+data/raw/*.csv
+data/raw/*.xlsx
+!data/raw/.gitkeep
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Output (regenerable)
+output/figures/*.png
+output/figures/*.pdf
+output/tables/*.csv
+!output/figures/.gitkeep
+!output/tables/.gitkeep
+
